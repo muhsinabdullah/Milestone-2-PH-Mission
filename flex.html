@@ -4,8 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Flex</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 20px;
+        }
+        .box{
+            background-color: slateblue;
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+        }
+        .container-2{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .item{
+            width: 200px;
+            height: 100px;
+            background-color: aquamarine;
+            border: 2px solid tomato;
+        }
+        @media screen and (max-width:576px) {
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <h2>Flexible Flex</h2>
+    <div class="container">
+        <div class="box">
+            <h3>First Box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae rerum ducimus natus tempora ipsa placeat facilis quam dolorem saepe! Consequuntur recusandae qui distinctio, et omnis esse quasi incidunt odio harum amet eligendi vitae rem doloribus quo enim corrupti pariatur adipisci! Deleniti, in similique omnis beatae aperiam ex illo expedita voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, sapiente?</p>
+        </div>
+        <div class="box">
+            <h3>First Box</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione distinctio perferendis atque voluptatibus voluptates placeat recusandae cupiditate? Earum recusandae voluptatibus qui ea id sunt expedita sed ab eius? Incidunt nemo est consequuntur sit placeat molestiae modi tempora perferendis hic? Blanditiis at sunt voluptatem reiciendis in facere numquam, asperiores tempore officia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, sapiente?</p>
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="item">item -1</div>
+        <div class="item">item -2</div>
+        <div class="item">item -3</div>
+        <div class="item">item -4</div>
+        <div class="item">item -5</div>
+        <div class="item">item -6</div>
+        <div class="item">item -7</div>
+        <div class="item">item -8</div>
+        <div class="item">item -9</div>
+        <div class="item">item -10</div>
+    </div>
 </body>
 </html>
